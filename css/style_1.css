@@ -361,7 +361,12 @@ h3{
     width: 520px;
     height: 100%;
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
+
 @media (max-width: 1040px) { 
     .contact_box{
     width: 100%;
@@ -404,11 +409,19 @@ footer{
     transform: scale(1); 
 }
 
+.contact_about{
+    order: 1;
+}
+.contact-form{
+    order: 2;
+}
 .sns-link{
+    order: 3;
     margin: 0 auto;
     width: 205px;
-
 }
+
+
 .sns-icon{
     width: 30px;
     height: 30px;
