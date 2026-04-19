@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ひみずななみ | Webデザイナーポートフォリオ</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Shippori+Mincho&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--==ヘッダー==-->
+    <header>
+        <h1 class="logo">
+            <a href="index.html"><img src="images/home.png" alt="ホームへ"></a>
+        </h1>
+        <!--==ハンバーガー==-->
+        <nav class="hamburger-nav" aria-label="グローバルナビゲーション">
+            <button class="hamburger-icon" onclick="toggleMenu()" aria-label="メニューを開く" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+                <p class="hamburger-label num">MENU</p>
+            </button>
+            <div class="hamburger-body" id="hamburger-body">
+                <ul class="nav-links">
+                    <li><a href="#fv" onclick="toggleMenu()">お知らせ</a></li>
+                    <li><a href="#work" onclick="toggleMenu()">つくったもの</a></li>
+                    <li><a href="#me" onclick="toggleMenu()">わたしのこと</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">お問合せ</a></li>
+                </ul>
+                <ul class="nav-sns">
+                    <li><a href="https://x.com/kutinasi73" target="_blank">X <span>↗︎</span></a></li>
+                    <li><a href="https://instagram.com/ueue3.538" target="_blank">instagram <span>↗︎</span></a></li>
+                    <li><a href="https://note.com/kutinasi_777">note</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--==メイン==-->
+    <main>
+        <!--- fv --->
+        <section class="fv" id="fv">
+            <div class="fv-inner">
+                <!--==スライダー==-->
+                <div class="fv-slider-box">
+                    <ul class="fv-slider">
+                        <li class="fv-slide is-active"><img src="images/fv-1.png" alt="fv-img 1"></li>
+                        <li class="fv-slide"><img src="images/fv-2.png" alt="fv-img 2"></li>
+                        <li class="fv-slide"><img src="images/fv-3.png" alt="fv-img 3"></li>
+                        <li class="fv-slide"><img src="images/fv-4.png" alt="fv-img 4"></li>
+                    </ul>
+                    <div class="fv-slider-pagination">
+                        <span class="fv-dot active" onclick="fvMove(0)"></span>
+                        <span class="fv-dot" onclick="fvMove(1)"></span>
+                        <span class="fv-dot" onclick="fvMove(2)"></span>
+                        <span class="fv-dot" onclick="fvMove(3)"></span>
+                    </div>
+                </div>
+                <!---タイトル-->
+                <h2 class="index">
+                    <span>その<strong>『こだわり』</strong>を</span>
+                    <span>選ばれる<strong>理由</strong>に変える</span>
+                </h2>
+            </div>
+        </section>
+
+        <!--- news --->
+        <section class="news" id="news">
+            <div class="news-inner">
+                <h2 class="news-title index">お知らせ</h2>
+                <ul class="news-list">
+                    <li class="news-item">
+                        <time datetime="2026-04-13" class="num">2026.04.13</time>
+                        <p>ホームページをリニューアルしました</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--- work --->
+        <section class="work" id="work">
+            <div class="work-inner">
+                <h2 class="work-title index">想いのかたち</h2>
+                <!-- フィルターボタン -->
+                <div class="filter-buttons" role="group" aria-label="カテゴリーフィルター">
+                    <button class="filter-btn active" data-filter="all">すべて</button>
+                    <button class="filter-btn" data-filter="web">Webサイト</button>
+                    <button class="filter-btn" data-filter="lp">LP</button>
+                    <button class="filter-btn" data-filter="banner">バナー</button>
+                    <button class="filter-btn" data-filter="flyer">名刺</button>
+                    <button class="filter-btn" data-filter="illust">イラスト</button>
+                </div>
+                <!-- 作品リスト -->
+                <ul class="work-grid">
+                    <li class="work-item" data-category="lp">
+                        <a href="pages/work-9.html">
+                            <img src="images/work-9-s.png" alt="Web作品9">
+                            <p class="work-txt">｢現場の悩み｣を､一番近くで｡親しみやすさで壁を壊す伴走型LP</p>
+                            <p class="work-subtxt">ディレクション / デザイン / 実装</p>
+                        </a>
+                    </li>
+                    <li class="work-item" data-category="lp">
+                        <a href="pages/work-8.html">
+                            <img src="images/work-8-s.png" alt="Web作品8">
+                            <p class="work-txt">建設業の人手不足を解消｡特定技能採用支援のBtoB特化･戦略LP</p>
+                            <p class="work-subtxt">ディレクション / デザイン / 実装</p>
+                        </a>
+                    </li>
+                    <li class="work-item" data-category="lp">
+                        <a href="pages/work-7.html">
+                            <img src="images/work-7-s.png" alt="Web作品7">
+                            <p class="work-txt">感性を指先に｡トレンド×ニュアンス特化のブランドビジュアルLP</p>
+                            <p class="work-subtxt">ディレクション / デザイン / 実装</p>
+                        </a>
+                    </li>
+                    <li class="work-item" data-category="lp">
+                        <a href="pages/work-6.html">
+                            <img src="images/work-6-s.png" alt="Web作品6">
+                            <p class="work-txt">隠す爪から､魅せる爪へ｡専門職のための自爪育成予約LP</p>
+                            <p class="work-subtxt">ディレクション / デザイン / 実装</p>
+                        </a>
+                    </li>
+                    <li class="work-item" data-category="lp">
+                        <a href="pages/work-5.html">
+                            <img src="images/work-5-s.png" alt="Web作品5">
+                            <p class="work-txt">忙しい日常に｢予約｣という贅沢を｡1分で魅力を伝える時短特化型LP</p>
+                            <p class="work-subtxt">ディレクション / デザイン / 実装</p>
+                        </a>
+                    </li>
+                    <li class="work-item" data-category="lp">
+                        <a href="pages/work-4.html">
+                            <img src="images/work-4-s.png" alt="Web作品4">
+                            <p class="work-txt">週末限定30本の傑作｡希少性を価値に変える予約専用LP</p>
+                            <p class="work-subtxt">ディレクション / デザイン / 実装</p>
+                        </a>
+                    </li>
+                    <li class="work-item work-item--hidden" data-category="lp">
+                        <a href="pages/work-3.html">
+                            <img src="images/work-3-s.png" alt="Web作品3">
+                            <p class="work-txt">朝のひとひとときを､最高の体験に｡ライ麦パン専門カフェの集客LP</p>
+                            <p class="work-subtxt">ディレクション / デザイン / 実装</p>
+                        </a>
+                    </li>
+                    <li class="work-item work-item--hidden" data-category="lp">
+                        <a href="pages/work-2.html">
+                            <img src="images/work-2-s.png" alt="Web作品2">
+                            <p class="work-txt">親子の感性を､色にのせて｡体験型アート教室のブランディングLP</p>
+                            <p class="work-subtxt">ディレクション / デザイン / 実装</p>
+                        </a>
+                    </li>
+                    <li class="work-item work-item--hidden" data-category="lp">
+                        <a href="pages/work-1.html">
+                            <img src="images/work-1-s.png" alt="Web作品1">
+                            <p class="work-txt">ママの心に､余白と彩りを｡お茶販売のブランディングLP</p>
+                            <p class="work-subtxt">ディレクション / デザイン / 実装</p>
+                        </a>
+                    </li>
+                </ul>
+                <button class="btn-load-more" id="js-load-more">さらに<br>見る</button>
+            </div>
+        </section>
+
+        <!--- me --->
+        <section class="me" id="me">
+            <div class="me-inner">
+                <h2 class="me-title index">言葉のさきにあるもの</h2>
+                <div class="me-card">
+                    
+                    <!-- 表示エリア -->
+                    <img src="images/me-1.png" alt="プロフィール画像">
+                    <h3 class="index">ひみずななみ</h3>
+                    <p>
+                        ｢Webのことはよく分からない｣という不安を抱えたまま､無理に言葉を絞り出す必要はありません｡
+                        私は､オーナー様がうまく言葉にできない｢こだわり｣を整理し､形にするためにいます｡
+                    </p>
+                    <p>
+                        営業時代に培った｢納得感のある提案力｣と､芸大時代に磨いた｢緻密な職人力｣｡
+                        その両方で､あなたの商いの肩の荷を軽くするパートナーになります｡
+                    </p>
+                    <ul class="body-sns num">
+                        <li><a href="https://x.com/kutinasi73" target="_blank">X <span>↗︎</span></a></li>
+                        <li><a href="https://instagram.com/ueue3.538" target="_blank">instagram <span>↗︎</span></a></li>
+                        <li><a href="https://note.com/kutinasi_777">note <span>↗︎</span></a></li>
+                    </ul>
+                    <button class="btn-toggle js-me-toggle" aria-expanded="false" aria-controls="me-detail">
+                        もっと<br>みる
+                    </button>
+                    
+                    <!-- 開閉エリア -->
+                    <div class="me-detail" id="me-detail" hidden>
+                        <div class="me-solutions">
+                            <h3 class="index">私に託していただけること</h3>
+                            <div class="me-skills">
+                                <article class="skill-card">
+                                    <img src="images/me-2.png" alt="スキル-1">
+                                    <div class="skill-card-txtbox">
+                                        <span class="num">01</span>
+                                        <h4 class="index">迷いを､道しるべに｡</h4>
+                                        <p>
+                                            ヒアリングを通じて想いを可視化し､完成イメージを共有します｡
+                                            営業の経験を活かし､専門用語を使わずに｢納得感｣のある設計を提案します｡
+                                        </p>
+                                        <div class="skill-tools num">Illustrator / Photoshop /  Figma</div>
+                                    </div>
+                                </article>
+
+                                <article class="skill-card">
+                                    <img src="images/me-3.png" alt="スキル-2">
+                                    <div class="skill-card-txtbox">
+                                        <span class="num">02</span>
+                                        <h4 class="index">使いやすさを､当たり前に｡</h4>
+                                        <p>
+                                            スマホでの見やすさや､表示速度にこだわります｡
+                                            芸大時代に磨いた緻密な作業で､長く安心して使い続けられるサイトを構築します｡
+                                        </p>
+                                        <div class="skill-tools num">HTML / CSS(BEM) / JS</div>
+                                    </div>
+                                </article>
+
+                                <article class="skill-card">
+                                    <img src="images/me-4.png" alt="スキル-3">
+                                    <div class="skill-card-txtbox">
+                                        <span class="num">03</span>
+                                        <h4 class="index">自分で更新､不安なくす｡</h4>
+                                        <p>
+                                            更新方法のレクチャーや日々の運用をサポートします｡
+                                        </p>
+                                        <div class="skill-tools num">WordPress / STUDIO / WIX </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <button class="btn-toggle js-me-close">閉じる</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--- contact --->
+        <section class="contact" id="contact">
+            <div class="contact-inner">
+                <h2 class="contact-title index">まずはお店のお話から</h2>
+                <p>どんなに些細なことでも､まずはお話を聞かせてください｡<br>
+                    24時間以内に折り返しご連絡いたします｡<br>
+                    お送りいただいた内容は､お問い合わせへの回答以外には使用いたしません｡
+                </p>
+                <div class="contact-box">
+                    <button class="plane-submit" data-target="form-box" data-mask="mask">
+                        <div class="circle-bg">
+                            <svg class="circle-svg" viewBox="0 0 100 100">
+                                <path id="textPath" d="M 10,50 A 40,40 0 0,0 90,50" fill="none" />
+                                <circle cx="50" cy="50" r="40" fill="none" stroke="#FDFCF5" stroke-width="1" stroke-dasharray="2,2" />
+                                <text class="circle-text">
+                                    <textPath href="#textPath" startOffset="50%" text-anchor="middle">ご相談フォームはこちら</textPath>
+                                </text>
+                            </svg>
+                            <svg class="plane-icon" viewBox="0 0 24 24" id="js-plane-icon">
+                                <path d="M21,2L3,8.91L7.91,12.09L19.27,4.55L11.91,12.91L15.09,21L21,2Z" />
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="plane-submit variant-dm" data-target="sns-box" data-mask="sns-mask">
+                        <div class="circle-bg">
+                            <svg class="circle-svg" viewBox="0 0 100 100">
+                                <path id="textPathDM" d="M 10,50 A 40,40 0 0,0 90,50" fill="none" />
+                                <circle cx="50" cy="50" r="40" fill="none" stroke="#FDFCF5" stroke-width="1" stroke-dasharray="2,2" />
+                                <text class="circle-text">
+                                    <textPath href="#textPathDM" startOffset="50%" text-anchor="middle">DMはこちら</textPath>
+                                </text>
+                            </svg>
+                            <svg class="plane-icon" viewBox="0 0 24 24" id="js-dm-plane-icon">
+                                <path d="M21,2L3,8.91L7.91,12.09L19.27,4.55L11.91,12.91L15.09,21L21,2Z" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div id="mask" class="hidden"></div>
+                    <div id="form-box" class="hidden">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScYPd5eBfl5F_WQK85UEPCpXWrtV6FlkdxMJ1mGfhvUcQq6qg/viewform?embedded=true" width="640" height="1204" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+                    </div>
+                    <div id="sns-mask" class="hidden"></div>
+                    <div id="sns-box" class="hidden">
+                        <ul class="body-sns num">
+                            <li><a href="https://x.com/kutinasi73" target="_blank">X <span>↗︎</span></a></li>
+                            <li><a href="https://instagram.com/ueue3.538" target="_blank">instagram <span>↗︎</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--- fixed bar --->
+        <div class="fixed-bar">
+            <a href="#contact" class="plane-submit fixed-variant" aria-label="お問合せへ">
+                <div class="circle-bg">
+                    <svg class="circle-svg" viewBox="0 0 100 100">
+                        <path id="textPathFixed" d="M 10,50 A 40,40 0 0,0 90,50" fill="none" />
+                        <circle cx="50" cy="50" r="40" fill="none" stroke="#FDFCF5" stroke-width="1" stroke-dasharray="2,2" />
+                        <text class="circle-text">
+                            <textPath href="#textPathFixed" startOffset="50%" text-anchor="middle">ご相談はこちら</textPath>
+                        </text>
+                    </svg>
+                    <svg class="plane-icon" viewBox="0 0 24 24">
+                        <path d="M21,2L3,8.91L7.91,12.09L19.27,4.55L11.91,12.91L15.09,21L21,2Z" />
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <!--==フッター==-->
+    <footer>
+        <small>&copy; 2026 nanami himizu. All rights reserved.</small>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
