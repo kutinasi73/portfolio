@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朝のひとひとときを､最高の体験に｡| ひみずななみ</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Shippori+Mincho&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--==ヘッダー==-->
+    <header>
+        <h1 class="logo">
+            <a href="../index.html"><img src="../images/home.png" alt="ホームへ"></a>
+        </h1>
+        <!--==ハンバーガー==-->
+        <nav class="hamburger-nav" aria-label="グローバルナビゲーション">
+            <button class="hamburger-icon" onclick="toggleMenu()" aria-label="メニューを開く" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+                <p class="hamburger-label num">MENU</p>
+            </button>
+            <div class="hamburger-body" id="hamburger-body">
+                <ul class="nav-links">
+                    <li><a href="../index.html#fv" onclick="toggleMenu()">お知らせ</a></li>
+                    <li><a href="../index.html#work" onclick="toggleMenu()">つくったもの</a></li>
+                    <li><a href="../index.html#me" onclick="toggleMenu()">わたしのこと</a></li>
+                    <li><a href="../index.html#contact" onclick="toggleMenu()">お問合せ</a></li>
+                </ul>
+                <ul class="nav-sns">
+                    <li><a href="https://x.com/kutinasi73" target="_blank">X <span>↗︎</span></a></li>
+                    <li><a href="https://instagram.com/ueue3.538" target="_blank">instagram <span>↗︎</span></a></li>
+                    <li><a href="https://note.com/kutinasi_777">note</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--==メイン==-->
+    <main>
+        <!---work fv --->
+        <section class="work-fv">
+            <img src="../images/work-3.png" alt="作品画像">
+        </section>
+        <!---work about --->
+        <section class="about">
+            <div class="about-inner">
+                <div class="about-header">
+                    <h2 class="index">朝のひとひとときを､最高の体験に｡<br>ライ麦パン専門カフェの集客LP</h2>
+                    <p>｢ライ麦パン＝食べにくい｣という先入観を払拭し､モーニング需要を喚起する集客LP｡UI実装をライブラリ不使用のフルスクラッチで制作したLPです｡</p>
+                    <button class="website-btn num"><a href="https://kutinasi73.github.io/CAFE-Rye-Smile/">https://kutinasi73.github.io/CAFE-Rye-Smile/</a></button>
+                </div>
+                <ul class="about-body">
+                    <li class="about-item">
+                        <h3>制作時間</h3>
+                        <div class="about-item-txt">
+                            <p><span class="num">29</span>時間</p>
+                            <p>(企画:<span class="num">0.5</span>時間 / デザイン：<span class="num">8.5</span>時間 /  コーディング：<span class="num">20</span>時間)</p>
+                        </div>
+                    </li>
+                    <li class="about-item">
+                        <h3>使用技術</h3>
+                        <div class="about-item-txt">
+                            <p>･<span class="num"><span>Design:</span> Figma, Photoshop</span></p>
+                            <p>･<span class="num"><span>Frontend:</span> HTML5, CSS3, JavaScript (Vanilla JS)</span></p>
+                            <p>･<span class="num"><span>Others:</span> GitHub</span></p>
+                        </div>
+                    </li>
+                    <li class="about-item">
+                        <h3>制作担当</h3>
+                        <div class="about-item-txt">
+                            <p>ディレクション / コピーライティング / デザイン / コーディング(全工程)</p>
+                        </div>
+                    </li>
+                    <li class="about-item">
+                        <h3>対応機種</h3>
+                        <div class="about-item-txt">
+                            <p>レスポンシブ（<span class="num">PC</span> / スマートフォン）</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--- work details --->
+        <section class="work-details">
+            <div class="details-inner">
+                <ul class="work-imgbox">
+                    <li class="imgbox-scroll"><img src="../images/work-3-scroll.png" alt="作品画像スライド"></li>
+                    <li class="imgbox-select"><img src="../images/work-3-select.png" alt="作品画像ピックアップ"></li>
+                    <li class="imgbox-select"><img src="../images/work-3-select2.png" alt="作品画像ピックアップ"></li>
+                </ul>
+                <ul class="details-list">
+                    <li class="details-item">
+                        <h3>ターゲット</h3>
+                        <p>20〜30代の健康意識が高い女性｡忙しい日々の中で｢少し贅沢で心地よい朝の時間｣を求めている層｡</p>
+                    </li>
+                    <li class="details-item">
+                        <h3>課題と解決</h3>
+                        <h4>課題：</h4>
+                        <p>ライ麦パンに対する｢硬い･酸っぱい｣というネガティブなイメージによる集客機会の損失｡</p>
+                        <h4>解決：</h4>
+                        <p><span class="num">1. </span> <span>体験の視覚化  :</span>単なるメニュー紹介に留まらず､光が差し込む店内の雰囲気やシズル感のある写真を多用し､理想のモーニング体験を想起させる構成｡ </p>
+                        <p><span class="num">2. </span> <span>UI/UXの最適化:</span>多忙な朝に情報を探すユーザーを想定し､営業時間やアクセス方法を即座に把握できるシンプルな情報設計｡ </p>
+                        <p><span class="num">3. </span> <span>情緒的なアプローチ :</span>余白を贅沢に使い､北欧モダンな世界観で｢清潔感｣と｢温かみ｣を両立｡</p>
+                    </li>
+                    <li class="details-item">
+                        <h3>制作背景</h3>
+                        <p>自主制作｡健康志向の20〜30代女性をターゲットに､設計･デザイン･実装を一貫して行い､フロントエンドの実装力向上を目指したプロジェクト｡</p>
+                    </li>
+                    <li class="details-item">
+                        <h3>デザインのこだわり･工夫</h3>
+                        <p>ホワイトスペースを意識したミニマルなレイアウト｡スキャン（流し読み）でも｢美味しさ｣と｢居心地の良さ｣が伝わるよう､セクションごとにミリ単位で余白を調整｡</p>
+                        <p><span class="num">Font：</span>Inter / Indie Flower / M PLUS 1（モダンで読みやすく､都会的な洗練さを演出）</p>
+                        <p><span class="num">Color：</span>ゴールデンブラウン（ライ麦） / ホワイト / チャコール（落ち着き）</p>
+                    </li>
+                    <li class="details-item">
+                        <h3>実装のこだわり･工夫</h3>
+                        <p><span class="num">1. </span><span>フルスクラッチ実装 ：</span>外部ライブラリに頼らず､ハンバーガーメニュー､スライダーを自作し､軽量化と高い制御性を実現｡ </p>
+                        <p><span class="num">2. </span><span>SVG :</span>装飾にSVGを採用し､ページを開いた瞬間にブランドの個性が動的に伝わる演出を付与｡ </p>
+                        <p><span class="num">3. </span><span>背景デザインの数ピクセルへの執着 :</span>セクションタイトルの背景にある｢真円｣の配置に最も時間を費やした｡異なるデバイス（PC/スマホ）や解像度でも､文字との黄金比を崩さず､かつ｢温かみ｣を感じさせる絶妙な位置（transform と pseudo-elements による微調整）を追求し､サイト全体の完成度を底上げした｡</p>
+                    </li>
+                    <li class="details-item">
+                        <h3>振り返り</h3>
+                        <h4>良かった点：</h4> 
+                        <p>構造（HTML）･装飾（CSS）挙動（JS）を明確に分離して管理することで､保守性の高いコードを書く意識が定着した｡</p>
+                        <h4>改善したい点：</h4> 
+                        <p>アニメーションのパフォーマンスなど､より高度なビジュアル表現と実行速度の両立を次回の課題としたい｡</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--- contact --->
+        <section class="contact" id="contact">
+            <div class="contact-inner">
+                <h2 class="contact-title index">まずはお店のお話から</h2>
+                <p>どんなに些細なことでも､まずはお話を聞かせてください｡<br>
+                    24時間以内に折り返しご連絡いたします｡<br>
+                    お送りいただいた内容は､お問い合わせへの回答以外には使用いたしません｡
+                </p>
+                <div>
+                    <button class="plane-submit" data-target="form-box" data-mask="mask">
+                        <div class="circle-bg">
+                            <svg class="circle-svg" viewBox="0 0 100 100">
+                                <path id="textPath" d="M 10,50 A 40,40 0 0,0 90,50" fill="none" />
+                                <circle cx="50" cy="50" r="40" fill="none" stroke="#FDFCF5" stroke-width="1" stroke-dasharray="2,2" />
+                                <text class="circle-text">
+                                    <textPath href="#textPath" startOffset="50%" text-anchor="middle">ご相談フォームはこちら</textPath>
+                                </text>
+                            </svg>
+                            <svg class="plane-icon" viewBox="0 0 24 24" id="js-plane-icon">
+                                <path d="M21,2L3,8.91L7.91,12.09L19.27,4.55L11.91,12.91L15.09,21L21,2Z" />
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="plane-submit variant-dm" data-target="sns-box" data-mask="sns-mask">
+                        <div class="circle-bg">
+                            <svg class="circle-svg" viewBox="0 0 100 100">
+                                <path id="textPathDM" d="M 10,50 A 40,40 0 0,0 90,50" fill="none" />
+                                <circle cx="50" cy="50" r="40" fill="none" stroke="#FDFCF5" stroke-width="1" stroke-dasharray="2,2" />
+                                <text class="circle-text">
+                                    <textPath href="#textPathDM" startOffset="50%" text-anchor="middle">DMはこちら</textPath>
+                                </text>
+                            </svg>
+                            <svg class="plane-icon" viewBox="0 0 24 24" id="js-dm-plane-icon">
+                                <path d="M21,2L3,8.91L7.91,12.09L19.27,4.55L11.91,12.91L15.09,21L21,2Z" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div id="mask" class="hidden"></div>
+                    <div id="form-box" class="hidden">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScYPd5eBfl5F_WQK85UEPCpXWrtV6FlkdxMJ1mGfhvUcQq6qg/viewform?embedded=true" width="640" height="1204" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+                    </div>
+                    <div id="sns-mask" class="hidden"></div>
+                    <div id="sns-box" class="hidden">
+                        <ul class="body-sns num">
+                            <li><a href="https://x.com/kutinasi73" target="_blank">X <span>↗︎</span></a></li>
+                            <li><a href="https://instagram.com/ueue3.538" target="_blank">instagram <span>↗︎</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--- fixed bar --->
+        <div class="fixed-bar">
+            <a href="#contact" class="plane-submit fixed-variant" aria-label="お問合せへ">
+                <div class="circle-bg">
+                    <svg class="circle-svg" viewBox="0 0 100 100">
+                        <path id="textPathFixed" d="M 10,50 A 40,40 0 0,0 90,50" fill="none" />
+                        <circle cx="50" cy="50" r="40" fill="none" stroke="#FDFCF5" stroke-width="1" stroke-dasharray="2,2" />
+                        <text class="circle-text">
+                            <textPath href="#textPathFixed" startOffset="50%" text-anchor="middle">ご相談はこちら</textPath>
+                        </text>
+                    </svg>
+                    <svg class="plane-icon" viewBox="0 0 24 24">
+                        <path d="M21,2L3,8.91L7.91,12.09L19.27,4.55L11.91,12.91L15.09,21L21,2Z" />
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </main>
+    <!--==フッター==-->
+    <footer>
+        <small>&copy; 2026 nanami himizu. All rights reserved.</small>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
